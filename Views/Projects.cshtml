@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Projects>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+Layout = "master.cshtml";
+}
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+<section class="section">
+
+    <div class="container">
+        
+        <div class="product-grid">
+            @if (Model.FeaturedProjects != null)
+            {
+                foreach (Project projects in Model.FeaturedProjects)
+                {
+                    <a href="@project.Url" class="project-grid__item" style="background-image: url('@project.Image.Url')">
+                        <div class="project-grid__item__overlay">
+                            <div class="product-grid__item__name">@project.ProjectName</div>
+                            <div class="product-grid__item__price">@project.ProjectDescription</div>
+                        </div>
+                    </a>
+                }
+            }
+        </div>
+    </div>
+
+</section>
