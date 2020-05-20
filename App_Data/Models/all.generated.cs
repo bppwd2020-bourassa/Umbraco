@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "23769d35dfcd8a7f")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "85ca3e6477bb290d")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 
 // FILE: models.generated.cs
@@ -1059,21 +1059,21 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
-		/// Project Description
+		/// Project Description: value for project desc
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]
 		[ImplementPropertyType("projectDescription")]
 		public string ProjectDescription => this.Value<string>("projectDescription");
 
 		///<summary>
-		/// Project Image
+		/// Project Image: value for project image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]
 		[ImplementPropertyType("projectImage")]
 		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent ProjectImage => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("projectImage");
 
 		///<summary>
-		/// Project Name
+		/// Project Name: value for project name
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.1")]
 		[ImplementPropertyType("projectName")]
