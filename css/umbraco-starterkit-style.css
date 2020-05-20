@@ -1245,7 +1245,7 @@ body.theme-font-mono {
         border-bottom: 1px solid #f2f2f2
     }
 
-.product-grid {
+.project-grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
